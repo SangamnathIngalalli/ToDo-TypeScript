@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeSafe Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i> TypeSafe Todo</h1>
+            <p>A type-safe todo application built with TypeScript</p>
+        </header>
+
+        <div class="todo-form">
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="What needs to be done?"
+                    autofocus
+                >
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="prioritySelect">Priority:</label>
+                    <select id="prioritySelect">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dueDateInput">Due Date:</label>
+                    <input type="date" id="dueDateInput">
+                </div>
+                
+                <button id="addBtn" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="btn btn-sm" data-filter="all">All</button>
+            <button class="btn btn-sm" data-filter="pending">Pending</button>
+            <button class="btn btn-sm" data-filter="in-progress">In Progress</button>
+            <button class="btn btn-sm" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="todo-stats">
+            <span id="totalTasks">0 tasks</span>
+            <span id="completedTasks">0 completed</span>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+
+    <footer>
+        <p>Built with TypeScript <i class="fab fa-js"></i></p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
