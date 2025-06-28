@@ -1,5 +1,7 @@
 # Simple To-Do App with TypeScript
 
+🔗 [Live Demo](https://sangamnathingalalli.github.io/ToDo-TypeScript/)
+
 A beginner-friendly To-Do application built with TypeScript, HTML, and CSS that demonstrates fundamental TypeScript concepts.
 
 ## TypeScript Concepts Used
